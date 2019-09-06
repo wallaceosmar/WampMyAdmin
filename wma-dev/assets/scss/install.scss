@@ -1,0 +1,273 @@
+/*
+Copyright (C) 2019 Wallace Osmar
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+//colors
+$seashell: rgba(241, 241, 241, 1);
+$white: rgba(255, 255, 255, 1);
+$color_tundora_approx: rgba(68, 68, 68, 1);
+$black_13: rgba(0, 0, 0, .13);
+$color_alto_approx: rgba(221, 221, 221, 1);
+$black_7: rgba(0, 0, 0, 0.07);
+$color_storm_dust_approx: rgba(102, 102, 102, 1);
+$color_fuscous_gray_approx: rgba(85, 85, 85, 1);
+$color_celeste_approx: rgba(204, 204, 204, 1);
+$color_black_haze_approx: rgba(247, 247, 247, 1);
+$color_gallery_approx: rgba(238, 238, 238, 1);
+$color_mountain_mist_approx: rgba(153, 153, 153, 1);
+$black_50: rgba(0, 0, 0, 0.5);
+$alabaster: rgba(250, 250, 250, 1);
+$color_shark_approx: rgba(35, 40, 45, 1);
+
+//
+$body-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+//@extend-elements
+//original selectors
+//.screen-reader-input, .screen-reader-text
+%extend_1 {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+//original selectors
+//h1, h2
+%extend_2 {
+    border-bottom: 1px solid $color_alto_approx;
+    clear: both;
+    color: $color_storm_dust_approx;
+    font-size: 24px;
+    padding: 0;
+    padding-bottom: 7px;
+    font-weight: 400;
+}
+
+//original selectors
+//.wma-core-ui .button, .wma-core-ui .button-secondary
+%extend_3 {
+    color: $color_fuscous_gray_approx;
+    border-color: $color_celeste_approx;
+    background: $color_black_haze_approx;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 1px 0 $color_celeste_approx;
+    vertical-align: top;
+}
+
+//original selectors
+//.wma-core-ui .button, .wma-core-ui .button-secondary, .wma-core-ui .button-primary
+%extend_4 {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 3px;
+    white-space: nowrap;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+}
+
+//original selectors
+//.wma-core-ui .button.active, .wma-core-ui .button.active:hover, .wma-core-ui .button:active, .wma-core-ui .button-secondary:active
+%extend_5 {
+    background: $color_gallery_approx;
+    border-color: $color_mountain_mist_approx;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: inset 0 2px 5px -3px $black_50;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(1px);
+}
+
+
+html {
+    background: $seashell;
+    margin: 0 20px;
+}
+body {
+    background: $white;
+    color: $color_tundora_approx;
+    margin: 140px auto 25px;
+    padding: 20px 20px 10px 20px;
+    max-width: 700px;
+    font-family: $body-font-family;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 1px 3px $black_13;
+}
+.step {
+    margin: 20px 0 15px;
+    text-align: left;
+    padding: 0;
+}
+th {
+    text-align: left;
+    padding: 0;
+}
+.form-table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
+    th {
+        font-size: 14px;
+        text-align: left;
+        padding: 10px 20px 10px 0;
+        width: 140px;
+        vertical-align: top;
+    }
+    td {
+        margin-bottom: 9px;
+        padding: 10px 20px 10px 0;
+        font-size: 14px;
+        vertical-align: top;
+    }
+    input[type=email] {
+        width: 206px;
+    }
+    input[type=password] {
+        width: 206px;
+    }
+    input[type=text] {
+        width: 206px;
+    }
+    input[type=url] {
+        width: 206px;
+    }
+    input {
+        line-height: 20px;
+        font-size: 15px;
+        padding: 3px 5px;
+        border: 1px solid $color_alto_approx;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: inset 0 1px 2px $black_7;
+    }
+}
+.screen-reader-input {
+    @extend %extend_1;
+}
+.screen-reader-text {
+    @extend %extend_1;
+}
+h1 {
+    @extend %extend_2;
+}
+h2 {
+    @extend %extend_2;
+}
+dd {
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+dt {
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+li {
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+p {
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.wma-core-ui {
+    .button {
+        @extend %extend_3;
+        @extend %extend_4;
+        &.button-large {
+            height: 30px;
+            line-height: 28px;
+            padding: 0 12px 2px;
+        }
+        &.active {
+            @extend %extend_5;
+            &:hover {
+                @extend %extend_5;
+            }
+        }
+        &:active {
+            @extend %extend_5;
+            outline: 2px solid transparent;
+            outline-offset: 0;
+        }
+        &:focus {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+            outline: 2px solid transparent;
+            outline-offset: 0;
+        }
+        &.focus {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+        }
+        &.hover {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+        }
+        &:hover {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+        }
+    }
+    .button-secondary {
+        @extend %extend_3;
+        @extend %extend_4;
+        &:active {
+            @extend %extend_5;
+        }
+        &:focus {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+        }
+        &:hover {
+            background: $alabaster;
+            border-color: $color_mountain_mist_approx;
+            color: $color_shark_approx;
+        }
+    }
+    .button-primary {
+        @extend %extend_4;
+    }
+    .button-group.button-large .button {
+        height: 30px;
+        line-height: 28px;
+        padding: 0 12px 2px;
+    }
+    p .button {
+        vertical-align: baseline;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "wallaceosmar/wamp-my-admin",
+    "description": "WampMyAdmin is WEB interface to manage WampServer.",
+    "authors": [
+        {
+            "name": "Wallace Osmar",
+            "email": "wallace.osmar@hotmail.com"
+        }
+    ],
+    "require": {}
+}

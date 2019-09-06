@@ -1,0 +1,20 @@
+@mixin portlet-color( $color ) {
+    $_colors: map-get($portlet-colors, $color);
+    
+    &.portlet-box {
+        &.#{$color} {
+            background-color: map-get( $_colors, 'bg')!important;
+            border: 1px solid map-get( $_colors, 'br') !important;
+            border-top: 0;
+            & .portlet-title {
+                border-bottom: 1px solid $color_gallery_approx;
+                color: $white!important;
+            }
+            & .portlet-body {
+                & {
+                    background-color: $white !important;
+                }
+            }
+        }
+    }
+}

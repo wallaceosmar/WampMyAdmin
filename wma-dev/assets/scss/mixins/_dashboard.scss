@@ -1,0 +1,9 @@
+@mixin dashboard-color( $color ) {
+    $_colors: map-get($dashboard-colors, $color);
+    &.#{$color} {
+        background-color: map-get( $_colors, 'bg');
+        .more {
+            background-color: map-get( $_colors, 'bgm');
+        }
+    }
+}

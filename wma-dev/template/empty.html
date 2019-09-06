@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2019 wallaceosmar
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+<!DOCTYPE html>
+<html>
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.9/css/all.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='../../wma-content/assets/css/style.css' type='text/css' media='all' />
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="page-navbar-fixed page-boxed">
+    
+    <!-- BEGIN PAGE LOADER -->
+    <div id="page_loader" style="z-index: 999999;">
+        <div class="loader"></div>
+    </div>
+    <!-- END PAGE LOADER -->
+    
+    <!-- BEGIN HEADER -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-host">
+    
+        <!-- BEGIN CONTAINER -->
+        <div class="container">
+
+            <!-- BEGIN NAVBAR LOGO -->
+            <a class="navbar-brand" href="#">
+                <img src="../../wma-content/assets/img/wamp-white.png" height="30" alt="WampMyAdmin">
+            </a>
+            <!-- END NAVBAR LOGO -->
+
+            <!-- BEGIN COLLAPSE BUTTON -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- END COLLAPSE BUTTON -->
+
+            <!--BEGIN THE COLLAPSED -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- BEGIN LEFT -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href='index.html' class='nav-link'>Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProjectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="list-project.php"><i class="fas fa-list-ul"></i> All Projects</a>
+                            <a class="dropdown-item" href="new-project.php"><i class="fas fa-edit"></i> New Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProjectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hosts</a>
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="hosts-list.html"><i class="fas fa-list-ul"></i> Local Host</a>
+                            <a class="dropdown-item" href="hosts-new.html"><i class="fas fa-edit"></i> New Hosts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProjectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="options-general.html"><i class="fas fa-list-ul"></i> General Settings</a>
+                        </div>
+                    </li>
+                </ul><!-- END LEFT -->
+                
+                <!-- BEGIN RIGHT -->
+                <ul class="navbar-nav ml-auto"></ul>
+                <!-- END RIGHT -->
+                
+            </div>
+            <!-- END THE  -->
+        </div>
+        <!-- END CONTAINER -->
+    
+    </nav>
+    <!-- END HEADER -->
+    
+    <!-- BEGIN CONTAINER -->
+    <div class="container">
+        <!-- BEGIN PAGE -->
+        <div class="page-container row">  
+            <!-- BEGIN SIDEBAR -->
+            <div class="col-3 page-sidebar">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <span class="col-12">
+                            <a class="text-center" href="/">
+                                <img src="../../wma-content/assets/img/wampserver-half-logo.png" alt="logo" style="width:160px;">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="row top-news">
+                        <div class="col-12 home-side-button side-btn">
+                            <a href="#" class="btn-side">
+                                <span class="text-center"><i class="fas fa-cogs"></i> Construir Website!</span>
+                                <span class="separate-line"></span>
+                                <em class="text-center">Use a ferramenta de construtor de website para criar um website em 5 minutos.</em>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+    
+            <!-- BEGIN PAGE -->
+            <div class="col-md-9 page-content">
+                <!-- BEGIN PAGE CONTAINER -->
+                <div class="container-fluid">
+
+                    <!-- BEGIN PAGE HEADER-->
+                    <div class="row hidden-print">
+                        <div class="col-12">
+                            <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                            <h3 class="page-title">
+                                <small></small>
+                            </h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><i class='fas fa-home'></i> <a href="#">Home</a></li>
+                            </ul>
+                            <!-- END PAGE TITLE & BREADCRUMB-->
+                        </div>
+                    </div>
+                    <!-- END PAGE HEADER-->
+
+                    <!-- BEGIN PAGE CONTENT-->
+                    <div class="row">
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- END PAGE CONTENT-->
+
+                </div>
+                <!-- END PAGE CONTAINER-->
+            </div>
+            <!-- END PAGE CONTAINER -->
+        </div>
+        <!-- END PAGE -->
+        
+        <!-- BEGIN FOOTER -->
+        <div class="footer">
+            <div class="footer-inner">© 2019 All rights reserved</div>
+            <div class="footer-tools">
+                <span class="go-top">
+                    <i class="icon-angle-up"></i>
+                </span>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+    </div>
+    <!-- END CONTAINER -->
+    
+    <!-- BEGIN JAVASCRIPTS -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?ver=4.0.0'></script>
+    <script type='text/javascript' src='../../wma-content/assets/js/wampmyadmin.js'></script>
+    <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

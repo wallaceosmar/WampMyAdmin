@@ -1,0 +1,10 @@
+@mixin select2-height ( $height ) {
+    .select2-container--default {
+        .select2-selection--single {
+            height: $height !important;
+            .select2-selection__arrow {
+                height: $height !important;
+            }
+        }
+    }
+}

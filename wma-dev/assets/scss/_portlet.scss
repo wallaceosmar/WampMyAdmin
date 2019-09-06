@@ -1,0 +1,93 @@
+.portlet {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    &.portlet-box {
+        border: 1px solid $color_gallery_approx;
+        padding: 0!important;
+        .portlet-title {
+            padding: 8px 10px 2px;
+            border-bottom: 1px solid $color_gallery_approx;
+            color: $black;
+            margin-bottom: 0;
+        }
+        .portlet-body {
+            background-color: $white;
+            padding: 10px;
+        }
+        .portlet-form {
+            .form-group {
+                margin-left: -10px;
+                margin-right: -10px;
+                &.row {
+                    margin-bottom: 0;
+                    &:first-child {
+                        margin-top: -10px;
+                    }
+                }
+            }
+            .col-form-label {
+                text-align: end;
+            }
+        }
+    }
+    .portlet-body {
+        clear: both;
+        padding: 0;
+        &.portlet-form form div.form-group-content {
+            padding: .8em;
+        }
+    }
+    .portlet-title {
+        margin-bottom: 15px;
+        &:after {
+            content: "";
+            display: table;
+            line-height: 0;
+            clear: both;
+        }
+        &:before {
+            content: "";
+            display: table;
+            line-height: 0;
+        }
+        .caption {
+            float: left;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 7px;
+            padding: 0;
+        }
+    }
+    .portlet-form form {
+        margin: 0!important;
+        padding: 0!important;
+        .form-group-content {
+            border-left: 1px solid $color_gallery_approx;
+            border-top: 1px solid $color_gallery_approx;
+        }
+    }
+    
+    .portlet-form .form-actions {
+        margin-left: -10px!important;
+        margin-right: -10px!important;
+        margin-bottom: -10px!important;
+        margin-top: 0!important;
+        padding: 19px 20px 20px;
+        padding-left: 190px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    // Include the colors to portlet
+    @include portlet-color('pink');
+    @include portlet-color('blue');
+    @include portlet-color('brown');
+    @include portlet-color('purple');
+    @include portlet-color('green');
+}
+

@@ -1,0 +1,197 @@
+ul.page-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        > a {
+            display: block;
+            position: relative;
+            margin: 0;
+            border: 0;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            border-top: 1px solid $color_bon_jour_approx!important;
+            color: $black!important;
+            font-weight: 400;
+            i {
+                font-size: 16px;
+                margin-right: 5px;
+                //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                text-shadow: none;
+            }
+            &:hover {
+                background: $color_gallery_approx;
+                border-top: 1px solid $color_gray_nurse_approx;
+            }
+        }
+        &.active {
+            i {
+                color: $white!important;
+            }
+            > a {
+                border: none;
+                //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                text-shadow: none;
+                background: $color_jungle_green_approx!important;
+                border-top-color: transparent!important;
+                color: $white!important;
+            }
+            > ul.sub-menu {
+                display: block;
+            }
+        }
+        > ul.sub-menu {
+            display: none;
+            list-style: none;
+            clear: both;
+            margin: 8px 0;
+            padding-left: 0px;
+            > li {
+                background: 0 0;
+                margin: 0;
+                padding: 0;
+                margin-top: 1px!important;
+                > a {
+                    display: block;
+                    margin: 0;
+                    padding: 5px 0;
+                    padding-left: 44px!important;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 300;
+                    background: 0 0;
+                }
+                &:first-child > a {
+                    border-top: 0!important;
+                }
+            }
+        }
+        a i {
+            color: $color_pink_swan_approx!important;
+        }
+        &.open > a {
+            background: $color_gallery_approx;
+            border-top: 1px solid $color_gray_nurse_approx;
+        }
+        &:hover > a {
+            background: $color_gallery_approx;
+            border-top: 1px solid $color_gray_nurse_approx;
+        }
+    }
+    ul.sub-menu > li {
+        > a {
+            font-weight: 400!important;
+            color: $color_mine_shaft_approx!important;
+            &:hover {
+                color: $color_gray_approx!important;
+                background: $gallery!important;
+            }
+            i {
+                color: $color_pink_swan_approx!important;
+            }
+        }
+        &.active > a {
+            color: $color_gray_approx!important;
+            background: $gallery!important;
+        }
+        &.open > a {
+            color: $color_gray_approx!important;
+            background: $gallery!important;
+        }
+    }
+}
+
+.side-btn .btn {
+    background: 0 0;
+    color: #333;
+    height: inherit
+}
+
+.side-btn .btn:hover {
+    background-color: #ececec!important;
+    color: #333!important
+}
+
+.side-btn .btn-side {
+    background: 0 0;
+    color: #333;
+    height: inherit
+}
+
+.separate-line {
+    border-bottom: 1px solid #eee;
+    display: block;
+    margin-top: 5px;
+}
+
+.side-btn .btn-side {
+    background: 0 0;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    color: #333;
+    height: inherit;
+}
+
+.side-btn .btn-side:hover {
+    background-color: #ececec!important;
+    color: #333!important;
+    text-decoration: none;
+}
+
+.top-news em {
+    margin-bottom: 0;
+    font-style: normal;
+}
+
+.top-news span {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.top-news a, .top-news em, .top-news span {
+    display: block;
+    text-align: left;
+}
+
+.btn-side {
+    padding: 10px;
+    filter: none;
+    border: 0;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    outline: 0;
+    text-decoration: none;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+    &.active,
+    &.disabled,
+    &:active,
+    &:focus,
+    &:hover,
+    &[disabled] {
+        color: #333;
+        background-color: #d8d8d8!important;
+    }
+}
+
+.home-side-button {
+    padding-left: 0px;
+    padding-right: 0px;
+}
